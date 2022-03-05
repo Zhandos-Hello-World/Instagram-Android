@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools"
     android:padding="8dp">
 
 
@@ -27,7 +26,6 @@
         android:layout_marginStart="8dp"
         app:layout_constraintHorizontal_bias="0"
         android:textStyle="bold"
-        android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,7 +55,7 @@
         app:layout_constraintVertical_bias="0"
         app:shapeAppearanceOverlay="@style/PostImage" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/like"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -65,9 +63,10 @@
         android:drawableLeft="@drawable/ic_baseline_favorite_24"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/shapeableImageView"
+        style="?attr/materialButtonOutlinedStyle"
         />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/comment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -75,25 +74,31 @@
         android:drawableLeft="@drawable/ic_baseline_comment_24"
         android:layout_marginStart="8dp"
         app:layout_constraintStart_toEndOf="@id/like"
-        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView" />
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView"
+        style="?attr/materialButtonOutlinedStyle"
+        />
 
-    <ImageButton
+    <Button
         android:id="@+id/sent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_baseline_send_24"
+        app:icon="@drawable/ic_baseline_send_24"
         android:layout_marginStart="8dp"
         app:layout_constraintStart_toEndOf="@id/comment"
-        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView" />
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView"
+        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+        />
 
 
-    <ImageButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_baseline_bookmark_24"
+        app:icon="@drawable/ic_baseline_bookmark_24"
         app:layout_constraintTop_toBottomOf="@+id/shapeableImageView"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -107,15 +112,16 @@
         app:layout_constraintEnd_toStartOf="@id/more"
         />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/more"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
+        android:textSize="14sp"
         android:text="More"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/save"
-        android:textColor="@color/black"
-        />
+        style="?attr/materialButtonOutlinedStyle"
+    />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

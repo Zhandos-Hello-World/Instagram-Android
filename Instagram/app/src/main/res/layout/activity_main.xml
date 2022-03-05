@@ -10,11 +10,14 @@
         android:id="@+id/fragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:name="production.zhandos.instagram.Home.HomeFragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:navGraph="@navigation/bottom_nav"
+        app:defaultNavHost="true"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/bottom_nav"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        />
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
