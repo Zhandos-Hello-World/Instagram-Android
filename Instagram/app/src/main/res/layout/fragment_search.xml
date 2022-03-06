@@ -6,26 +6,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_margin="16dp"
-    tools:context=".Search.SearchFragment">
+    tools:context=".search.SearchFragment">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:startIconDrawable="@drawable/ic_baseline_search_24"
-        android:hint="Search">
+        android:hint="Search"
+        >
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/round_input"/>
     </com.google.android.material.textfield.TextInputLayout>
-    <ScrollView
+    <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content">
         <LinearLayout
             android:layout_height="wrap_content"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:orientation="horizontal">
 
             <com.google.android.material.button.MaterialButton
@@ -59,7 +59,14 @@
                 android:layout_marginEnd="4dp"
                 />
         </LinearLayout>
-    </ScrollView>
+    </HorizontalScrollView>
 
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:layout_gravity="center"
+        android:orientation="horizontal" />
 
 </LinearLayout>

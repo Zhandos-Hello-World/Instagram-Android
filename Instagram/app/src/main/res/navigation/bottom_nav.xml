@@ -7,28 +7,28 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="production.zhandos.instagram.Home.HomeFragment"
+        android:name="production.zhandos.instagram.home.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home"
         />
     <fragment
         android:id="@+id/searchFragment"
-        android:name="production.zhandos.instagram.Search.SearchFragment"
+        android:name="production.zhandos.instagram.search.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" />
     <fragment
         android:id="@+id/addFragment"
-        android:name="production.zhandos.instagram.Add.AddFragment"
+        android:name="production.zhandos.instagram.add.AddFragment"
         android:label="fragment_add"
         tools:layout="@layout/fragment_add" />
     <fragment
         android:id="@+id/activityFragment"
-        android:name="production.zhandos.instagram.Search.ActivityFragment"
+        android:name="production.zhandos.instagram.activity.ActivityFragment"
         android:label="ActivityFragment"
         tools:layout="@layout/fragment_activity"/>
     <fragment
         android:id="@+id/profileFragment"
-        android:name="production.zhandos.instagram.Profile.ProfileFragment"
+        android:name="production.zhandos.instagram.profile.ProfileFragment"
         android:label="ProfileFragment"
         tools:layout="@layout/fragment_profile"/>
 

@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#EDEEF2">
+    android:background="#EDEEF2"
+    tools:context=".home.HomeFragment">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
@@ -27,73 +28,102 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:orientation="vertical">
-                <LinearLayout
+                <HorizontalScrollView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:padding="5dp"
-                        app:strokeWidth="5dp"
-                        app:strokeColor="@android:color/darker_gray"
-                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
-                        android:layout_marginEnd="5dp"
-                        app:srcCompat="@android:drawable/ic_menu_add"/>
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:padding="5dp"
+                            app:strokeWidth="5dp"
+                            app:strokeColor="@android:color/darker_gray"
+                            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                            android:layout_marginEnd="5dp"
+                            app:srcCompat="@android:drawable/ic_menu_add"/>
 
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        app:srcCompat="@drawable/ava"
-                        android:scaleType="centerCrop"
-                        android:padding="5dp"
-                        app:strokeWidth="5dp"
-                        app:strokeColor="@android:color/darker_gray"
-                        android:layout_marginEnd="5dp"
-                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            app:srcCompat="@drawable/ava"
+                            android:scaleType="centerCrop"
+                            android:padding="5dp"
+                            app:strokeWidth="5dp"
+                            app:strokeColor="@android:color/darker_gray"
+                            android:layout_marginEnd="5dp"
+                            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
 
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        app:srcCompat="@drawable/ava"
-                        android:scaleType="centerCrop"
-                        android:padding="5dp"
-                        app:strokeWidth="5dp"
-                        app:strokeColor="@android:color/darker_gray"
-                        android:layout_marginEnd="5dp"
-                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        app:srcCompat="@drawable/ava"
-                        android:scaleType="centerCrop"
-                        android:padding="5dp"
-                        app:strokeWidth="5dp"
-                        app:strokeColor="@android:color/darker_gray"
-                        android:layout_marginEnd="5dp"
-                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        app:srcCompat="@drawable/ava"
-                        android:scaleType="centerCrop"
-                        android:padding="5dp"
-                        app:strokeWidth="5dp"
-                        app:strokeColor="@android:color/darker_gray"
-                        android:layout_marginEnd="5dp"
-                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        app:srcCompat="@drawable/ava"
-                        android:scaleType="centerCrop"
-                        android:padding="5dp"
-                        app:strokeWidth="5dp"
-                        app:strokeColor="@android:color/darker_gray"
-                        android:layout_marginEnd="5dp"
-                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
-                </LinearLayout>
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            app:srcCompat="@drawable/ava"
+                            android:scaleType="centerCrop"
+                            android:padding="5dp"
+                            app:strokeWidth="5dp"
+                            app:strokeColor="@android:color/darker_gray"
+                            android:layout_marginEnd="5dp"
+                            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            app:srcCompat="@drawable/ava"
+                            android:scaleType="centerCrop"
+                            android:padding="5dp"
+                            app:strokeWidth="5dp"
+                            app:strokeColor="@android:color/darker_gray"
+                            android:layout_marginEnd="5dp"
+                            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            app:srcCompat="@drawable/ava"
+                            android:scaleType="centerCrop"
+                            android:padding="5dp"
+                            app:strokeWidth="5dp"
+                            app:strokeColor="@android:color/darker_gray"
+                            android:layout_marginEnd="5dp"
+                            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            app:srcCompat="@drawable/ava"
+                            android:scaleType="centerCrop"
+                            android:padding="5dp"
+                            app:strokeWidth="5dp"
+                            app:strokeColor="@android:color/darker_gray"
+                            android:layout_marginEnd="5dp"
+                            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            app:srcCompat="@drawable/ava"
+                            android:scaleType="centerCrop"
+                            android:padding="5dp"
+                            app:strokeWidth="5dp"
+                            app:strokeColor="@android:color/darker_gray"
+                            android:layout_marginEnd="5dp"
+                            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            app:srcCompat="@drawable/ava"
+                            android:scaleType="centerCrop"
+                            android:padding="5dp"
+                            app:strokeWidth="5dp"
+                            app:strokeColor="@android:color/darker_gray"
+                            android:layout_marginEnd="5dp"
+                            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
 
 
                 <androidx.cardview.widget.CardView
