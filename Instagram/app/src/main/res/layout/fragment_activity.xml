@@ -15,36 +15,48 @@
         app:titleCentered="true" />
     <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
         <LinearLayout
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:orientation="horizontal">
-
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="All activity"
-                android:layout_marginEnd="4dp"
-                />
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Likes"
-                android:layout_marginEnd="4dp"
-                />
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Comments"
-                android:layout_marginEnd="4dp"
-                />
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mentions"
-                android:layout_marginEnd="4dp"
-                />
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All activity"
+                    style="@style/ToggleButton"
+                    android:layout_marginEnd="8dp"
+                    app:cornerRadius="16dp"
+                    app:strokeWidth="0dp"
+                    />
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Likes"
+                    android:layout_marginEnd="8dp"
+                    style="@style/ToggleButton"
+                    app:cornerRadius="16dp"
+                    app:strokeWidth="0dp"
+                    />
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comments"
+                    style="@style/ToggleButton"
+                    android:layout_marginEnd="8dp"
+                    app:cornerRadius="16dp"
+                    app:strokeWidth="0dp"
+                    />
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mentions"
+                    style="@style/ToggleButton"
+                    android:layout_marginEnd="8dp"
+                    app:cornerRadius="16dp"
+                    app:strokeWidth="0dp"
+                    />
         </LinearLayout>
     </HorizontalScrollView>
 
@@ -58,7 +70,8 @@
         />
     <ScrollView
         android:layout_height="match_parent"
-        android:layout_width="match_parent">
+        android:layout_width="match_parent"
+        android:scrollbars="none">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -70,8 +83,8 @@
                 android:elevation="4dp"
                 app:cardCornerRadius="20dp"
                 android:layout_gravity="center"
-                android:layout_marginBottom="7dp"
-                android:layout_marginTop="16dp">
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="8dp">
                 <include layout="@layout/view_notify"/>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
@@ -80,8 +93,8 @@
                 android:elevation="4dp"
                 app:cardCornerRadius="20dp"
                 android:layout_gravity="center"
-                android:layout_marginBottom="7dp"
-                android:layout_marginTop="16dp">
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="8dp">
                 <include layout="@layout/view_notify"/>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
@@ -90,8 +103,8 @@
                 android:elevation="4dp"
                 app:cardCornerRadius="20dp"
                 android:layout_gravity="center"
-                android:layout_marginBottom="7dp"
-                android:layout_marginTop="16dp">
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="8dp">
                 <include layout="@layout/view_notify"/>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
@@ -100,8 +113,8 @@
                 android:elevation="4dp"
                 app:cardCornerRadius="20dp"
                 android:layout_gravity="center"
-                android:layout_marginBottom="7dp"
-                android:layout_marginTop="16dp">
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="8dp">
                 <include layout="@layout/view_notify"/>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
@@ -110,8 +123,8 @@
                 android:elevation="4dp"
                 app:cardCornerRadius="20dp"
                 android:layout_gravity="center"
-                android:layout_marginBottom="7dp"
-                android:layout_marginTop="16dp">
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="8dp">
                 <include layout="@layout/view_notify"/>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
@@ -120,8 +133,8 @@
                 android:elevation="4dp"
                 app:cardCornerRadius="20dp"
                 android:layout_gravity="center"
-                android:layout_marginBottom="7dp"
-                android:layout_marginTop="16dp">
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="8dp">
                 <include layout="@layout/view_notify"/>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
@@ -130,28 +143,8 @@
                 android:elevation="4dp"
                 app:cardCornerRadius="20dp"
                 android:layout_gravity="center"
-                android:layout_marginBottom="7dp"
-                android:layout_marginTop="16dp">
-                <include layout="@layout/view_notify"/>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                android:elevation="4dp"
-                app:cardCornerRadius="20dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="7dp"
-                android:layout_marginTop="16dp">
-                <include layout="@layout/view_notify"/>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                android:elevation="4dp"
-                app:cardCornerRadius="20dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="7dp"
-                android:layout_marginTop="16dp">
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="8dp">
                 <include layout="@layout/view_notify"/>
             </androidx.cardview.widget.CardView>
 

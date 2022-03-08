@@ -5,8 +5,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:layout_margin="16dp"
-    tools:context=".search.SearchFragment">
+    android:paddingTop="8dp"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    tools:context=".search.SearchFragment"
+    android:background="@color/white_gray">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/search"
@@ -14,6 +17,10 @@
         android:layout_height="wrap_content"
         app:startIconDrawable="@drawable/ic_baseline_search_24"
         android:hint="Search"
+        android:background="@color/white"
+        android:padding="8dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
         >
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -22,41 +29,49 @@
     </com.google.android.material.textfield.TextInputLayout>
     <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
         <LinearLayout
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:orientation="horizontal">
-
             <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Reels"
-                android:layout_marginEnd="4dp"
+                style="@style/ToggleButton"
+                android:layout_marginEnd="8dp"
+                app:cornerRadius="16dp"
+                app:strokeWidth="0dp"
                 />
             <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="IGTV"
-                android:layout_marginEnd="4dp"
+                android:layout_marginEnd="8dp"
+                style="@style/ToggleButton"
+                app:cornerRadius="16dp"
+                app:strokeWidth="0dp"
                 />
             <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Store"
-                android:layout_marginEnd="4dp"
+                style="@style/ToggleButton"
+                android:layout_marginEnd="8dp"
+                app:cornerRadius="16dp"
+                app:strokeWidth="0dp"
                 />
             <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Games"
-                android:layout_marginEnd="4dp"
-                />
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Reels"
-                android:layout_marginEnd="4dp"
+                style="@style/ToggleButton"
+                android:layout_marginEnd="8dp"
+                app:cornerRadius="16dp"
+                app:strokeWidth="0dp"
                 />
         </LinearLayout>
     </HorizontalScrollView>

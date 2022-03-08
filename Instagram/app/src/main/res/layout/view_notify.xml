@@ -38,20 +38,36 @@
         android:layout_height="wrap_content"
         android:text="Started following you"
         android:layout_marginStart="8dp"
+        android:textSize="12sp"
+        android:textColor="#7E7F82"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintTop_toBottomOf="@id/username"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/follow_btn"
+        app:layout_constraintStart_toEndOf="@+id/ava_image_view" />
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 min"
+        android:textColor="#CECFD2"
+        android:layout_marginStart="8dp"
+        android:textSize="11sp"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintTop_toBottomOf="@id/description"
+        app:layout_constraintEnd_toStartOf="@id/follow_btn"
         app:layout_constraintStart_toEndOf="@+id/ava_image_view" />
     <com.google.android.material.button.MaterialButton
         android:id="@+id/follow_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Follow back"
-        android:textSize="12sp"
-        android:padding="2dp"
+        android:textSize="8sp"
+        android:padding="8dp"
+        style="@style/BlueButton"
+        app:cornerRadius="16dp"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:cornerRadius="16dp"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
